@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import heroRobot from "@/assets/hero-robot.png";
 
 const Hero = () => {
   return (
@@ -20,12 +21,12 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="relative h-96 rounded-2xl bg-gradient-to-br from-card/50 to-secondary/30 border border-primary/20 shadow-glow flex items-center justify-center">
-            {/* Space for robot and chart image */}
-            <div className="text-center text-muted-foreground">
-              <p className="text-sm">Hero Image Space</p>
-              <p className="text-xs mt-2">(Robot with trading chart)</p>
-            </div>
+          <div className="relative h-96 rounded-2xl flex items-center justify-center overflow-hidden">
+            <img 
+              src={heroRobot} 
+              alt="AI Trading Bot with Stock Exchange Chart - Decentralized Trading Platform" 
+              className="w-full h-full object-contain animate-float"
+            />
           </div>
         </div>
       </div>
