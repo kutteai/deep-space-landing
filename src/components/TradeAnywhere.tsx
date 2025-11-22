@@ -1,3 +1,5 @@
+import tradingPlatform from "@/assets/trading-platform.png";
+
 const TradeAnywhere = () => {
   return (
     <section className="py-20 px-4">
@@ -8,14 +10,12 @@ const TradeAnywhere = () => {
             <p className="text-muted-foreground mb-8">Trade anytime, anywhere!Trade anytime, anywhere!Trade anytime, anywhere!</p>
           </div>
 
-          <div className="relative h-96 rounded-2xl bg-gradient-to-br from-card/50 to-secondary/30 border border-primary/20 overflow-hidden">
-            {/* Space for trading platform screenshot */}
-            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-              <div className="text-center">
-                <p className="text-sm">Trading Platform Screenshot Space</p>
-                <p className="text-xs mt-2">(Dashboard interface)</p>
-              </div>
-            </div>
+          <div className="relative rounded-2xl overflow-hidden border-2 border-primary/20 shadow-glow">
+            <img 
+              src={tradingPlatform} 
+              alt="Advanced Trading Platform Interface - BTC/USDT Charts and Order Book" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </div>
