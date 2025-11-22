@@ -1,4 +1,5 @@
 import { Shield, Lock, FileCheck } from "lucide-react";
+import security3d from "@/assets/security-3d.png";
 
 const SafeReliable = () => {
   return (
@@ -48,12 +49,12 @@ const SafeReliable = () => {
             </div>
           </div>
 
-          <div className="relative h-96 rounded-2xl bg-gradient-to-br from-card/50 to-secondary/30 border border-primary/20 shadow-glow flex items-center justify-center">
-            {/* Space for 3D security graphic */}
-            <div className="text-center text-muted-foreground">
-              <p className="text-sm">3D Security Graphic Space</p>
-              <p className="text-xs mt-2">(Holographic head visualization)</p>
-            </div>
+          <div className="relative h-[500px] flex items-center justify-center">
+            <img 
+              src={security3d} 
+              alt="3D Holographic Security Face - Blockchain Security Verification" 
+              className="h-full object-contain drop-shadow-2xl animate-float"
+            />
           </div>
         </div>
       </div>
