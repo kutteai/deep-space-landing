@@ -21,7 +21,7 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="relative h-[600px] flex items-center justify-center">
+          <div className="relative h-[900px] flex items-center justify-center">
             <img 
               src={heroRobot} 
               alt="AI Trading Bot with Stock Exchange Chart - Decentralized Trading Platform" 

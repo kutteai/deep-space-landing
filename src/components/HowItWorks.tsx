@@ -1,3 +1,5 @@
+import mobileApp from "@/assets/mobile-app.png";
+
 const steps = [
   {
     number: "1",
@@ -26,11 +28,12 @@ const HowItWorks = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-96 rounded-2xl bg-gradient-to-br from-card/50 to-secondary/30 border border-primary/20 flex items-center justify-center">
-            {/* Space for mobile app mockup */}
-            <div className="text-center text-muted-foreground">
-              <p className="text-sm">Mobile App Mockup Space</p>
-            </div>
+          <div className="relative h-[600px] flex items-center justify-center">
+            <img 
+              src={mobileApp} 
+              alt="Mobile Trading App Interface with Charts and Controls" 
+              className="h-full object-contain drop-shadow-2xl"
+            />
           </div>
 
           <div className="space-y-8">
